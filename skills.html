@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Skills | Aqib Ali</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Library for Scroll Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d9a6c15f.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f8f9fc, #fdfdfd);
+    }
+
+    .nav-link:hover {
+      color: #4f46e5;
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .category {
+      background: #ffffffcc;
+      backdrop-filter: blur(12px);
+      border: 1px solid #e0e0e0;
+      transition: all 0.3s ease;
+    }
+
+    .category:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon-box:hover {
+      transform: rotate(5deg);
+      transition: transform 0.4s;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-primary">Aqib Ali</h1>
+      <nav class="space-x-6 font-medium text-gray-700">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="services.html" class="nav-link">My Services</a>
+        <a href="skills.html" class="nav-link">My Skills</a>
+        <a href="contact.html" class="nav-link">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-20">
+    <section class="max-w-7xl mx-auto px-6" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-center text-indigo-600 mb-4 animate-bounce">My Professional Skills</h2>
+      <p class="text-center text-lg max-w-3xl mx-auto mb-12 text-gray-600">
+        I have developed a strong set of technical and creative skills over the years. Below is a breakdown of my expertise grouped by categories.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Frontend -->
+        <div class="category p-6 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-4 text-purple-700">🎨 Frontend Development</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fab fa-react text-blue-500"></i> React.js</li>
+            <li><i class="fab fa-html5 text-orange-500"></i> HTML5 & CSS3</li>
+            <li><i class="fas fa-code text-pink-500"></i> Tailwind CSS</li>
+            <li><i class="fab fa-js text-yellow-500"></i> JavaScript (ES6+)</li>
+            <li><i class="fas fa-wave-square text-indigo-400"></i> Framer Motion</li>
+          </ul>
+          <div class="mt-6">
+            <p class="text-sm">React.js</p>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="bg-blue-500 h-3 rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="category p-6 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold mb-4 text-indigo-700">🛠 Backend Development</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fab fa-node-js text-green-600"></i> Node.js</li>
+            <li><i class="fas fa-server text-blue-400"></i> Express.js</li>
+            <li><i class="fas fa-database text-green-700"></i> MongoDB</li>
+            <li><i class="fas fa-fire text-red-500"></i> Firebase</li>
+            <li><i class="fas fa-plug text-gray-600"></i> REST APIs</li>
+          </ul>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="category p-6 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-2xl font-semibold mb-4 text-pink-700">💻 Programming Languages</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fab fa-python text-yellow-600"></i> Python</li>
+            <li><i class="fab fa-java text-red-700"></i> Java</li>
+            <li><i class="fas fa-code text-blue-500"></i> C++</li>
+            <li><i class="fas fa-database text-purple-600"></i> SQL</li>
+            <li><i class="fas fa-brain text-pink-500"></i> R (basic)</li>
+          </ul>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="category p-6 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-2xl font-semibold mb-4 text-green-700">🧰 Tools & Platforms</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fab fa-git-alt text-orange-700"></i> Git & GitHub</li>
+            <li><i class="fab fa-wordpress text-blue-700"></i> WordPress</li>
+            <li><i class="fas fa-terminal text-gray-800"></i> VS Code</li>
+            <li><i class="fas fa-rocket text-indigo-500"></i> Netlify & Vercel</li>
+            <li><i class="fas fa-bolt text-yellow-400"></i> Postman</li>
+          </ul>
+        </div>
+
+        <!-- Design & Media -->
+        <div class="category p-6 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="500">
+          <h3 class="text-2xl font-semibold mb-4 text-yellow-700">🎨 Design & Media</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fas fa-paint-brush text-pink-600"></i> Adobe Photoshop</li>
+            <li><i class="fas fa-film text-red-600"></i> Adobe Premiere Pro</li>
+            <li><i class="fas fa-cut text-green-600"></i> CapCut</li>
+            <li><i class="fab fa-canva text-indigo-600"></i> Canva</li>
+            <li><i class="fas fa-video text-blue-500"></i> Video Editing</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="category p-6 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="600">
+          <h3 class="text-2xl font-semibold mb-4 text-blue-700">🧠 Soft Skills</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fas fa-comments text-green-500"></i> Communication</li>
+            <li><i class="fas fa-puzzle-piece text-indigo-600"></i> Problem Solving</li>
+            <li><i class="fas fa-users text-purple-600"></i> Teamwork</li>
+            <li><i class="fas fa-eye text-pink-400"></i> Attention to Detail</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-6">
+    <p>&copy; 2025 Aqib Ali. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

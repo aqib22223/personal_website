@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Services | Aqib Ali</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Library for Scroll Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d9a6c15f.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background: linear-gradient(to right, #f7c6f2, #d7efff, #f8f7f9);
+    }
+
+    .bg-animated {
+      background: linear-gradient(-45deg, #d0e4ff, #f5d2c0, #ffebf3, #c2f0f2);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Hover effects for navbar links */
+    .nav-link:hover {
+      color: #4f73e1;
+      text-decoration: underline;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .btn-hover:hover {
+      background-color: #ff5f99;
+      color: white;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Card hover effect */
+    .card-shadow:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Advanced Hover Effects for Icons */
+    .icon-hover:hover {
+      transform: rotate(360deg);
+      color: #ff5f99;
+      transition: transform 0.6s ease-in-out, color 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-animated text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-primary">Aqib Ali</h1>
+      <nav class="space-x-6 font-medium text-gray-700">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="services.html" class="nav-link">My Services</a>
+        <a href="skills.html" class="nav-link">My Skills</a>
+        <a href="contact.html" class="nav-link">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-32 space-y-24">
+
+    <!-- Services Section -->
+    <section id="services" class="px-6 text-center" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-purple-600 mb-6">My Services</h2>
+      <p class="max-w-4xl mx-auto text-lg leading-relaxed mb-12">
+        Explore the range of services I offer. Whether you're looking for custom web development, engaging designs, professional CV writing, or video editing, I've got you covered!
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Full Stack Development -->
+        <div class="bg-white rounded-xl p-8 shadow-md card-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-5xl mb-4 text-indigo-600 icon-hover">
+            <span role="img" aria-label="Full Stack Development">💻</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Full Stack Development</h3>
+          <p class="text-base text-gray-600 mb-4">
+            Building modern web applications with MERN stack, API integrations, and responsive frontends. I create intuitive, high-performance web applications for businesses and personal projects.
+          </p>
+          <a href="contact.html" class="btn-hover text-blue-600">Get in Touch</a>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="bg-white rounded-xl p-8 shadow-md card-shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-5xl mb-4 text-pink-600 icon-hover">
+            <span role="img" aria-label="Graphic Design">🎨</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Graphic Design</h3>
+          <p class="text-base text-gray-600 mb-4">
+            Crafting stunning visuals, logos, posters, and social media graphics with creative flair. Let me help you build a unique visual identity for your brand and projects.
+          </p>
+          <a href="contact.html" class="btn-hover text-blue-600">Get in Touch</a>
+        </div>
+
+        <!-- WordPress Expert -->
+        <div class="bg-white rounded-xl p-8 shadow-md card-shadow" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-5xl mb-4 text-green-600 icon-hover">
+            <span role="img" aria-label="WordPress">🔧</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">WordPress Expert</h3>
+          <p class="text-base text-gray-600 mb-4">
+            Designing dynamic WordPress websites with themes, plugins, speed optimization, and SEO. I help you create SEO-friendly websites with custom themes and plugins that drive traffic and sales.
+          </p>
+          <a href="contact.html" class="btn-hover text-blue-600">Get in Touch</a>
+        </div>
+
+        <!-- Programming -->
+        <div class="bg-white rounded-xl p-8 shadow-md card-shadow" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-5xl mb-4 text-yellow-600 icon-hover">
+            <span role="img" aria-label="Programming">💻</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Programming</h3>
+          <p class="text-base text-gray-600 mb-4">
+            Proficient in Python, Java, and C++ for solving complex problems and building robust systems. Whether you need algorithms, backend logic, or data analysis, I have the skills to tackle any challenge.
+          </p>
+          <a href="contact.html" class="btn-hover text-blue-600">Get in Touch</a>
+        </div>
+
+        <!-- CV Writing -->
+        <div class="bg-white rounded-xl p-8 shadow-md card-shadow" data-aos="fade-up" data-aos-delay="500">
+          <div class="text-5xl mb-4 text-purple-600 icon-hover">
+            <span role="img" aria-label="CV Writing">📄</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">CV Writing</h3>
+          <p class="text-base text-gray-600 mb-4">
+            Helping professionals craft winning CVs and LinkedIn profiles that land interviews. I specialize in writing tailored resumes that highlight your skills and achievements in the best light.
+          </p>
+          <a href="contact.html" class="btn-hover text-blue-600">Get in Touch</a>
+        </div>
+
+        <!-- Video Editing -->
+        <div class="bg-white rounded-xl p-8 shadow-md card-shadow" data-aos="fade-up" data-aos-delay="600">
+          <div class="text-5xl mb-4 text-red-600 icon-hover">
+            <span role="img" aria-label="Video Editing">🎬</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4">Video Editing</h3>
+          <p class="text-base text-gray-600 mb-4">
+            Creating engaging and high-quality video content for various platforms using top-notch tools. Let me help you with everything from YouTube videos to social media posts and promotional clips.
+          </p>
+          <a href="contact.html" class="btn-hover text-blue-600">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-sm text-gray-600">
+    <p>&copy; 2025 Aqib Ali. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
